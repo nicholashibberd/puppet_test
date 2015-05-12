@@ -15,9 +15,9 @@ class user {
 }
 
 class user::accounts ($sudo_users, $admin_users, $non_admin_users) {
-  user::account{ $sudo_users: sudo => true }
-  user::account{ $admin_users: admin => true }
-  user::account{ $non_admin_users: }
+  user::account{ $sudo_users: sudo      => true, admin  => true }
+  user::account{ $admin_users: sudo     => false, admin => true }
+  user::account{ $non_admin_users: sudo => false, admin =>  false}
 }
 
 define user::account ($sudo, $admin) {
