@@ -39,7 +39,7 @@ define user::account ($sudo, $admin) {
   }
 
   file { "/home/${name}/.ssh/":
-    ensure  => present,
+    ensure  => directory,
     owner   => $name,
     group   => $name,
     require => User[$name]
