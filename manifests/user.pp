@@ -1,5 +1,3 @@
-require 'stdlib'
-
 class user {
   $user_data = {
     "nicholashibberd" => {
