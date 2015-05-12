@@ -36,7 +36,7 @@ define user::account ($sudo, $admin) {
     $groups = []
   }
   user { $name:
-    home       => /home/$name,
+    home       => "/home/$name",
     groups     => $groups,
     managehome => true,
     managehome => true,
