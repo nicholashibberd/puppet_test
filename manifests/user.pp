@@ -10,8 +10,6 @@ class user {
       "ssh_key"       => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDrO+0WBMFoFlGzm7L5ipP4s+CrO/VipYPHx2yfUpZdjXuhQ5/AopzG/OypuD3YqBWqvoOT+zpLTziDI4+pePOB+5e95K732HmAV5gFYwrhJWUo4qfTE/5qK4lIk5o0K1ypdnMeybJ8xvrjLAORydKJ7xVeNEVOtXFcPROtdGfXzM3PnmmeLGNar2wtKLcDSdFdu6pBle6K+oyy4kMLaJgbwGb92HFmKrIjkmOW+YGDfFSP1RnNKZtzr0HlJnyPNhtKQr0rk6h+hWzu2w85jr1bT9N10O4r7q2GoqQtIk2SC9E0c8yDSwymulClcMwD2lbxh230V6YXvSUjmy8GvnX daniellehibberd"
     }
   }
-
-  $usernames = keys($user_data)
 }
 
 class user::accounts ($sudo_users, $admin_users, $non_admin_users) {
