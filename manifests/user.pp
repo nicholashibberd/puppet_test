@@ -51,6 +51,6 @@ define user::account ($sudo, $admin) {
     group   => $name,
     mode    => 600,
     content => "${ssh_key}\n",
-    require => File["/home/${name}.ssh/"]
+    require => File["/home/${name}/.ssh/"]
   }
 }
